@@ -1,5 +1,7 @@
 # Breakout Game
 
+![Demo](Demo.gif)
+
 一个使用Godot引擎开发的经典打砖块游戏，采用对象池模式优化性能。
 
 ## 项目概述
