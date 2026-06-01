@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://b5euf3h358583"]
+
+[ext_resource type="Script" uid="uid://btx51dq4anvs2" path="res://Ball.cs" id="1_x8fbi"]
+
+[node name="Ball" type="CharacterBody2D" unique_id=2054174020]
+script = ExtResource("1_x8fbi")

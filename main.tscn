@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://c6gk5mfpjpn7s"]
+
+[ext_resource type="Script" uid="uid://dmsnto7xmocr3" path="res://Main.cs" id="1_h2yge"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ig7tw"]
+size = Vector2(20, 720)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0xm2m"]
+size = Vector2(20, 720)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h2yge"]
+size = Vector2(1280, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1bvp3"]
+size = Vector2(1280, 20)
+
+[node name="Main" type="Node2D" unique_id=1373254159]
+script = ExtResource("1_h2yge")
+
+[node name="LeftWall" type="StaticBody2D" parent="." unique_id=1308443277]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall" unique_id=1047795690]
+position = Vector2(-10, 360)
+shape = SubResource("RectangleShape2D_ig7tw")
+
+[node name="RightWall" type="StaticBody2D" parent="." unique_id=262169771]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall" unique_id=1416899244]
+position = Vector2(1290, 360)
+shape = SubResource("RectangleShape2D_0xm2m")
+
+[node name="TopWall" type="StaticBody2D" parent="." unique_id=78726196]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TopWall" unique_id=196520853]
+position = Vector2(640, -10)
+shape = SubResource("RectangleShape2D_h2yge")
+
+[node name="DeadZone" type="Area2D" parent="." unique_id=1784520790]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeadZone" unique_id=337145660]
+position = Vector2(640, 730)
+shape = SubResource("RectangleShape2D_1bvp3")

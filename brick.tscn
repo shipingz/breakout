@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bknevm70eminh"]
+
+[ext_resource type="Script" uid="uid://i5oo50sfok48" path="res://Brick.cs" id="1_jfaf4"]
+
+[node name="brick" type="StaticBody2D" unique_id=1301474133]
+position = Vector2(-1, 0)
+script = ExtResource("1_jfaf4")
